@@ -2,6 +2,7 @@ import 'dart:developer';
 
 import 'package:amrita_ayurveda/presentation/auth/sign_in/screen_login.dart';
 import 'package:amrita_ayurveda/presentation/auth/splash_screen.dart';
+import 'package:amrita_ayurveda/presentation/patient%20list/patientlist_screen.dart';
 import 'package:amrita_ayurveda/routes/routes_names.dart';
 import 'package:flutter/material.dart';
 
@@ -16,6 +17,7 @@ class AppRoutes {
     return [
       RouteEntity(page: SplashScreen(), path: ApprouteNames.splashscreen),
       RouteEntity(page: ScreenLogin(), path: ApprouteNames.login),
+      RouteEntity(page: PatientListScreen(), path: ApprouteNames.patientlist),
     ];
   }
 

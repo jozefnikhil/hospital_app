@@ -1,8 +1,15 @@
+import 'package:amrita_ayurveda/application/auth/sign_in_provider.dart';
 import 'package:amrita_ayurveda/routes/route.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    MultiProvider(
+      providers: [ChangeNotifierProvider(create: (_) => SignInProvider())],
+      child: MyApp(),
+    ),
+  );
 }
 
 final GlobalKey<NavigatorState> navKey = GlobalKey<NavigatorState>();
@@ -18,7 +25,7 @@ class MyApp extends StatelessWidget {
       navigatorKey: navKey,
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
       ),
     );
   }
