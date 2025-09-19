@@ -135,6 +135,33 @@ class Text14Normal extends StatelessWidget {
   }
 }
 
+class Text15Normal extends StatelessWidget {
+  final String text;
+  final Color color;
+  final FontWeight fontWeight;
+  final TextAlign textAlign;
+  final int lines;
+  const Text15Normal({
+    super.key,
+    this.text = '',
+    this.color = AppColors.primaryTextElement,
+    this.fontWeight = FontWeight.normal,
+    this.textAlign = TextAlign.start,
+    this.lines = 1,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      text,
+      textAlign: textAlign,
+      maxLines: lines,
+      overflow: TextOverflow.fade,
+      style: TextStyle(color: color, fontSize: 15, fontWeight: fontWeight),
+    );
+  }
+}
+
 class Text10Normal extends StatelessWidget {
   final String text;
   final Color color;

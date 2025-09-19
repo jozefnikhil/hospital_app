@@ -1,4 +1,5 @@
 import 'package:amrita_ayurveda/application/auth/sign_in_provider.dart';
+import 'package:amrita_ayurveda/application/patient%20list/patient_list_provider.dart';
 import 'package:amrita_ayurveda/routes/route.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -6,7 +7,10 @@ import 'package:provider/provider.dart';
 void main() {
   runApp(
     MultiProvider(
-      providers: [ChangeNotifierProvider(create: (_) => SignInProvider())],
+      providers: [
+        ChangeNotifierProvider(create: (_) => SignInProvider()),
+        ChangeNotifierProvider(create: (_) => PatientListProvider()),
+      ],
       child: MyApp(),
     ),
   );

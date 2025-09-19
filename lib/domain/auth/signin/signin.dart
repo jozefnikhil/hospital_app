@@ -1,4 +1,3 @@
-
 class Signin {
   bool? status;
   String? message;

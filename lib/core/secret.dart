@@ -1,2 +1,1 @@
-
- const kBaseurl = "https://flutter-amr.noviindus.in/api/";
+const kBaseurl = "https://flutter-amr.noviindus.in/api/";

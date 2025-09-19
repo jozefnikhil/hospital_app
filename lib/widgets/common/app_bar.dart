@@ -1,11 +1,8 @@
-
 import 'package:amrita_ayurveda/core/app_colors.dart';
 import 'package:flutter/material.dart';
 
-
 AppBar buildAppbar({
   String title = '',
-  String address = 'Detecting location...',
   Function()? notificationFunc,
   Function()? cartFunc,
   Function()? profileFunc,
@@ -18,12 +15,7 @@ AppBar buildAppbar({
     // Leading: Address with location icon
     leading: Padding(
       padding: EdgeInsets.only(left: 8.0),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-         
-        ],
-      ),
+      child: Row(mainAxisSize: MainAxisSize.min, children: []),
     ),
 
     // Make leading widget wider to accommodate address text
@@ -34,16 +26,9 @@ AppBar buildAppbar({
       // Notification Icon
       IconButton(
         onPressed: notificationFunc,
-        icon: Icon(
-          Icons.notifications_outlined,
-          color: AppColors.iconcolor,
-        ),
+        icon: Icon(Icons.notifications_outlined, color: AppColors.iconcolor),
         tooltip: 'Notifications',
       ),
-
-     
-
-      
 
       SizedBox(width: 8), // Small padding on the right
     ],

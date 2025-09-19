@@ -15,6 +15,11 @@ class AppColors {
 
   static const Color hypertext = Color(0xFF0028FC);
 
-  static const Color iconcolor =  Color(0xFF010101);
+  static const Color iconcolor = Color(0xFF010101);
 
+  static const Color boxcolor = Color(0xFFF1F1F1);
+
+  static const Color cardicon = Color(0xFFF24E1E);
+
+  static const Color carddatecolor = Color(0x80000000);
 }
